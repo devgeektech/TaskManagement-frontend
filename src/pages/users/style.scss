@@ -1,0 +1,40 @@
+.usersWrapper {
+    max-width: 1024px;
+    margin: 30px auto;
+    button.backBtn.btn.btn-primary {
+        background: #e72a34;
+        border: none;
+    }
+    button.backBtn.btn.btn-primary {
+        background-color: #e72a34;
+        height: fit-content;
+    }
+    .userlistWrapper {
+        margin-top: 10px;
+    }
+    .btns {
+        button {
+            width: 35px;
+            height: 35px;
+            display: flex;
+            background: #f56e75;
+            border: none;
+            border-radius: 100px;
+            padding: 10px;
+            margin: 0 5px;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+                background: #e52733;
+            }
+            img {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+    .userActionButton{
+        display: flex;
+        justify-content: space-between;
+    }
+}

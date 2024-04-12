@@ -1,0 +1,59 @@
+.loginPage {
+    background-color: #e52733;
+    // background-color: #000;
+    height: 100vh;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .loginBlock {
+        background: #fff;
+        max-width: 330px;
+        border-radius: 20px;
+        padding: 30px;
+        h1 {
+            font-size: 24px;
+            font-family: 'Gilroy-Bold';
+            margin: 30px 0;
+        }
+        p {
+            color: #b9b9b9;
+            font-family: 'Gilroy-Medium';
+            font-size: 14px;
+        }
+        input.form-control {
+            background-color: #eeeeee;
+            margin: 20px 0;
+            &:focus {
+                box-shadow: none;
+                border-color: #f2aeb3;
+            }
+        }
+        .error {
+            color: #db0700;
+            font-size: 12px;
+            line-height: 16px;
+            display: none;
+        }
+        button.submitBtn.btn.btn-primary {
+            color: #fff;
+            background-color: #e52733;
+            border: 1px solid #e52733;
+            font-family: 'Gilroy-Medium';
+        }
+        p.accountYet {
+            margin: 10px 0;
+            color: #b9b9b9;
+            a {
+                color: #b9b9b9;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .loginPage {
+        height: auto;
+        padding: 25px 15px;   
+    }
+}

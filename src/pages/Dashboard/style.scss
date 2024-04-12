@@ -1,0 +1,223 @@
+.dashboardContent {
+  max-width: 900px;
+  margin: 15px auto;
+  .date_Time {
+    text-align: center;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.12);
+    position: relative;
+    button.addUserBtn {
+      width: fit-content;
+      background-color: #e72a34;
+      border: none;
+      padding: 5px 20px;
+      color: #ffffff;
+      border-radius: 4px;
+      font-weight: 500;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+    h1 {
+      font-size: 36px;
+      font-family: "Gilroy-Bold";
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 18px;
+      font-family: "Gilroy-Bold";
+      margin: 20px 0;
+    }
+    button.checkoutBtn {
+      max-width: 320px;
+      width: 100%;
+      border: 1px solid #eee;
+      background: #fff;
+      border-radius: 6px;
+      padding: 6px 10px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  .blocksWrapper {
+    padding: 20px 0;
+    border-bottom: 1px solid #e1e1e1;
+
+    .block {
+      width: 100%;
+      text-align: center;
+      background: #fff;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.12);
+      border-radius: 8px;
+      padding: 10px 15px;
+      p {
+        color: #b9b9b9;
+        margin-bottom: 0;
+        font-size: 12px;
+      }
+      label {
+        color: #e72a34;
+        font-weight: 700;
+        font-size: 12px;
+      }
+    }
+  }
+  .tasksWrapper {
+    h2 {
+      font-size: 24px;
+      margin-bottom: 0px;
+      font-family: "Gilroy-Bold";
+    }
+    form {
+      position: relative;
+      input.form-control {
+        padding-left: 50px;
+        background-color: #ebebeb;
+        &:focus {
+          border: 1px solid #f2aeb3;
+          box-shadow: none;
+        }
+      }
+      button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: none;
+        background: transparent;
+        padding: 6px 10px;
+
+        img {
+          width: 22px;
+        }
+      }
+    }
+    button.taskBtn {
+        color: #fff;
+        background-color: #e72a34;
+        border: 1px solid #e72a34;
+        font-family: "Gilroy-Bold";
+        width: 100%;
+        padding: 8px;
+        border-radius: 6px;
+        margin-bottom: 10px;
+    }
+    .singleTask {
+      display: flex;
+      width: 100%;
+      margin: 5px 0;
+      padding: 5px 0;
+      border-bottom: 1px solid #e1e1e1;
+      cursor: pointer;
+
+      .squareWrap {
+        background: #f4f4f4;
+        width: 80px;
+        min-width: 80px;
+        height: 80px;
+        border-radius: 5px;
+        margin-right: 15px;
+      }
+      .taskContent {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        label {
+          color: #e72a34;
+          font-weight: 700;
+          font-size: 12px;
+        }
+        p {
+          color: #b9b9b9;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.offcanvas {
+  .offcanvas-header {
+    justify-content: center;
+    .offcanvas-title.h5 {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  h3 {
+    padding: 15px 0;
+    font-size: 24px;
+  }
+  .timeBlock {
+    width: 250px;
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 6px;
+    label {
+      color: #b9b9b9;
+      font-weight: 400;
+      font-size: 12px;
+    }
+    h4 {
+      font-size: 18px;
+    }
+  }
+}
+
+button.submitBtn {
+  color: #fff;
+  background-color: #f56e75;
+  border: 1px solid #f56e75;
+  font-family: "Gilroy-Bold";
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  &:hover {
+    background-color: #e72a34;
+    border: 1px solid #e72a34;
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .dashboardContent {
+    .blocksWrapper {
+      .block {
+        padding: 10px 5px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .dashboardContent {
+    .blocksWrapper {
+      .block {
+        margin: 5px 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .dashboardContent {
+    .tasksWrapper {
+      .d-flex.justify-content-between.mt-3.mb-3 {
+        flex-direction: column;
+      }
+      h2 {
+        margin-bottom: 15px;
+      }
+      .singleTask {
+        .squareWrap {
+            width: 50px;
+            min-width: 50px;
+            height: 50px;
+        }
+     }
+    }
+  }
+}

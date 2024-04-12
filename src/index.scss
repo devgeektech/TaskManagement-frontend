@@ -1,0 +1,141 @@
+
+
+body {
+  margin: 0;
+  font-family: 'Gilroy-Regular';
+}
+.menuToggle {
+  .sidebarHide.sidebarWrapper {
+    .sidebar {
+      left: -250px;
+    }
+  }
+}
+.sidebarWrapper {
+  button.toggleBtn.btn.btn-primary {
+    position: absolute;
+    left: 315px;
+    top: 10px;
+    transition: 0.5s all ease-in-out;
+  }
+}
+.menuToggle {
+  .sidebarWrapper {
+    button.toggleBtn.btn.btn-primary {
+      left: 65px;
+    }
+  }
+}
+button.backBtn.btn.btn-primary {
+  background-color: #e72a34;
+  border: 1px solid #e72a34;
+  height: fit-content;
+}
+.menuToggle {
+  .sidebarHide.sidebarWrapper {
+    .pageContent {
+      margin-left: 0;
+    }
+  }
+}
+.sidebarWrapper {
+  display: flex;
+  background: #fafafa;
+  button.toggleBtn {
+    padding: 0;
+    background: transparent;
+    border: none;
+    &:focus {
+      background-color: transparent;
+    }
+}
+  .sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #e72a34;
+    position: fixed;
+    left: 0;
+    transition: 0.5s all ease-in-out;
+    h2 {
+      font-size: 20px;
+      color: #fff;
+      padding: 10px 15px;
+    }
+    button.navLink {
+      background: #f56e75;
+      font-weight: 600;
+      border: none;
+      border-radius: 0;
+      letter-spacing: 0.5px;
+      padding: 10px;
+      margin: 3px 0;
+      &:hover {
+        color: #e72a34;
+        background-color: #fff;
+      }
+    }
+    button.signoutBtn {
+      position: absolute;
+      bottom: 30px;
+      left: 20px;
+      width: calc(100% - 40px);
+      background: #fff;
+      border: 1px solid #fff;
+      font-size: 18px;
+      border-radius: 4px;
+      font-weight: 600;
+      padding: 5px;
+      color: #e72a34;
+    }
+  }
+    .pageContent {
+      width: 100%;
+      padding: 0 15px;
+      margin-left: 250px;
+      transition: 0.5s all ease-in-out;
+    }
+}
+.createTaskModal {
+  button.btn-close {
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  label {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .modal-footer {
+    border-top: none;
+      button.btn.btn-primary {
+        color: #fff;
+        background-color: #e72a34;
+        border: 1px solid #e72a34;
+        font-family: "Gilroy-Bold";
+        width: 100%;
+        padding: 8px;
+        border-radius: 6px;
+        margin-bottom: 10px;
+      }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .sidebarWrapper {
+    .sidebar {
+      left: 0px;
+    }
+    // .pageContent {
+    //   margin-left: 0 !important;
+    // }
+    .sidebarHide.sidebarWrapper {
+      .sidebar {
+        left: 250px  !important;
+      }
+      .pageContent {
+        margin-left: 250px !important;
+      }
+    }
+  }
+
+}
